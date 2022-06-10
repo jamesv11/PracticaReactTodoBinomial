@@ -6,7 +6,7 @@ const List = (props) => {
         <ul>
             {
                 props.buddies.map((element, index) => (
-                    <ListItem key={index} name={element} onDelete={props.onDelete}/>
+                    <ListItem key={index} idBuddy={element.id} name={element.name} onDelete={props.onDelete}/>
                 ))
             }
         </ul>
